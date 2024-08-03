@@ -83,7 +83,7 @@ function handleSubmission() {
     if (userGuess === correctAnswer) {
         result.textContent = 'Correct!';
         result.style.color = 'green';
-        currentItems.splice(currentIndex, 1); //Remove correctly answered item
+        currentItems.splice(currentIndex, 1); //Remove the correctly answered item
         if (currentItems.length === 0) {
             result.textContent = 'You have answered all items correctly! Returning to main menu...';
             setTimeout(() => {
