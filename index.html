@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJ's Menu Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BJ's Menu Quiz</h1>
+    </header>
+    <main>
+        <div id="selection-container">
+            <label for="section-select">Choose a section:</label>
+            <select id="section-select">
+                <option value="all">All</option>
+                <option value="$13 Lunch Specials">$13 Lunch Specials</option>
+                <option value="New & Popular">New & Popular</option>
+                <option value="Shareable Appetizers">Shareable Appetizers</option>
+                <option value="Soups & Salads">Soups & Salads</option>
+                <option value="Entree Salads">Entree Salads</option>
+                <option value="Pizzas">Pizzas</option>
+                <option value="Pastas">Pastas</option>
+                <option value="Sandwiches & Tacos">Sandwiches & Tacos</option>
+                <option value="Burgers">Burgers</option>
+                <option value="Specialty Entrees">Specialty Entrees</option>
+                <option value="Steaks & Slow-Roasted Entrees">Steaks & Slow-Roasted Entrees</option>
+                <option value="Kids Menu">Kids' Menu</option>
+                <option value="Desserts">Desserts</option>
+                <option value="Non-Alcoholic Beverages To Go">Non-Alcoholic Beverages To Go</option>
+                <option value="Cocktails To Go">Cocktails To Go</option>
+                <option value="Wine To Go">Wine To Go</option>
+                <option value="Sides">Sides</option>
+                <option value="Gluten Sensitive Options">Gluten Sensitive Options</option>
+            </select>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+        <div id="quiz-container" style="display: none;">
+            <img id="food-image" src="" alt="Food Item">
+            <input type="text" id="food-input" placeholder="Guess the food name">
+            <button id="submit-btn">Submit</button>
+            <p id="result"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
